@@ -1,0 +1,26 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="..проєкт на го/css/styles.css">
+</head>
+<body>
+<div class="basket_rigth">
+</div>
+<form role="form" method="POST" action="/SaveOrder">
+    <p> <b>Для оформлення замовлення нам потрібні наступні дані:</b></p>
+    <p> <input type="text" name="Lname" required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="Прізвище" value="">
+    <p> <input type="text" name="Fname" required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="Імя" value=""></p>
+    <p> <input type="text" name="Oname" required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="По батькові" value=""></p>
+    <p> <input type="text" name="Street"required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="Вулиця" value=""></p>
+    <p> <input type="text" name="Home"  required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="№ дома" value=""></p>
+    <p> <input type="text" name="Flat"           placeholder="№ квартири" value=""></p>
+    <p> <input type="text" name="index" required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="Індекс" value=""></p>
+    <p> <input type="text" name="Phone" required oninvalid="this.setCustomValidity('Заповніть це поле!')" placeholder="Телефон" value=""></p>
+    <p> <input type="submit" value="Оформити замовлення"></p>
+</form>
+</body>
+</html>
+{{end}}

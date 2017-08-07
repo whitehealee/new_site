@@ -1,0 +1,16 @@
+{{define "index"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    tyt doljen bit text:
+
+    {{range $key, $value := .}}
+    <div>{{ $key }} <span>text</span> {{ $value.Id }}  {{ $value.Name }} {{ $value.Price }}</div>
+    {{end}}
+</body>
+</html>
+{{end}}

@@ -1,0 +1,131 @@
+{{ define "index" }}
+{{template "header"}}
+<!--#################################################################-->
+<!--body-->
+
+    <div class="body">
+        <div class="container">
+            <div class="w3-section">
+                <img class="mySlides" src="../png/baner0.jpg">
+                <img class="mySlides" src="../png/baner2.jpg">
+                <img class="mySlides" src="../png/baner1.jpg">
+            </div>
+
+            <!--END SLIDER-->
+            <!--hot take-->
+            <div class="body-hot-take">
+                <div class="body-hot-take-text">
+                    ГАРЯЧІ ПРОПОЗИЦІЇ
+                </div>
+                <div class="body-hot-take-block-ul">
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/test_ware.png" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/test_ware.png" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/test_ware.png" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--end hot take-->
+            <!--TOP-5-->
+            <div class="body-top-l">
+                <div class="body-top-text">
+                    ТОП-5 НАЙПОПУУЛЯРНІШИХ ТОВАРІВ ЦЬОГО ТИЖНЯ
+                </div>
+                <div class="body-top-block-ul">
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--end hot take-->
+
+            <!--slider 2-->
+            <div class="w3-content w3-section">
+                <img class="mySlidesL" src="../png/baner3.jpg">
+                <img class="mySlidesL" src="../png/baner4.jpg">
+                <img class="mySlidesL" src="../png/baner5.jpg">
+            </div>
+            <!--END slider 2-->
+            <!--NEW-->
+            <div class="body-new">
+                <div class="body-new-text">
+                    НОВИНКИ
+                </div>
+                <div class="body-new-block-ul">
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <!--END-NEW-->
+
+            <!--END BODY-->
+        </div>
+    </div>
+
+<script>
+var myIndex = 0;
+var myIndexL = 0;
+carousel();
+carouselL();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 2800); // Change image every 2 seconds
+}
+function carouselL() {
+    var i;
+    var x = document.getElementsByClassName("mySlidesL");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndexL++;
+    if (myIndexL > x.length) {myIndexL = 1}
+    x[myIndexL-1].style.display = "block";
+    setTimeout(carouselL, 2800); // Change image every 2 seconds
+}
+</script>
+
+{{template "futer"}}
+{{end}}

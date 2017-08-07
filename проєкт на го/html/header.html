@@ -1,0 +1,95 @@
+{{ define "header" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Veresotskyi</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- Последняя компиляция и сжатый CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!--  TOP  -->
+<div class=header>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <a href="/"><img src="../png/veresotskyi.gif"  width="150" height="150" alt="veresotskyi.gif"></a>
+            </div>
+            <div class="header-top-nav">
+                <div class="header-top-nav-top">
+                    <div class="header-top-nav-top-search">
+                        <input type="search" class="form-control search-text" placeholder="Що Ви шукаєте?">
+                        <!--<button type="button" class="btn btn-success br0 search-button">-->
+                        <a href="#"><div class="search-button">&#128269;</div></a>
+                        <!--</button>-->
+                    </div>
+                    <div class="header-top-nav-top-stick">
+                        <img src="../png/stick.png"  width="3" height="100" alt="basket.gif">
+                    </div>
+
+                    <div class="header-top-nav-top-buy">
+                        <a href="/basket">
+                            <div class="header-top-nav-top-buy-button">
+                                <div class="basket-logo">
+                                    <img src="../png/basket.gif"  width="65" height="105" alt="basket.gif">
+                                </div>
+                                <div class="basket-button">
+                                    <!--<button type="button" class="btn btn-success br0 basket">-->
+                                    <div class="basket-span">КОРЗИНА</div>
+                                    <!--</button><br>-->
+                                    <div id="cart_basket"></div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="header-top-nav-top-order">
+                            <!--<button type="button" class="btn btn-success br0">-->
+                            <div class="header-top-nav-top-order-delivery">ДОСТАВКА</div>
+                            <!--</button>-->
+                            <!--<button type="button" class="btn btn-success br0 btn_header-top-nav-top-order-makeorder">-->
+                            <div class="header-top-nav-top-order-makeorder">ЗРОБИТИ<br>ЗАМОВЛЕННЯ</div>
+                            <!--</button>-->
+                            <div class="clear"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-top-nav-menu-bot">
+                    <ul>
+                        <li class="header-top-nav-menu-bot-li"><a href="#"><div class="header-top-nav-menu-bot-li-btn">Дізнайтесь більше про компанію</div></a></li>
+                        <li class="header-top-nav-menu-bot-li"><a href="#"><div class="header-top-nav-menu-bot-li-btn">Поради краси</div></a></li>
+                        <li class="header-top-nav-menu-bot-li"><a href="#"><div class="header-top-nav-menu-bot-li-btn">Моя сторінка</div></a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--2 части шапки. это меню снизу-->
+        <div class="header-bot">
+            <div class="header-bot-line">
+            </div>
+            <div class="header-bot-line-menu-ul">
+                <a href="/1"><div class="header-bot-line-menu-li header-bot-line-menu-li-l">Для обличчя</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Аромати</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для тіла та засмаги</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для ванни та душу</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для чоловіків</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Здоров'я</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для дому</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Новинки</div></a>
+            </div>
+
+        </div>
+        <!--конец нижнего меню-->
+    </div>
+</div>
+<script src="../js/bascket.js"></script>
+<!--  TOP  -->
+{{end}}

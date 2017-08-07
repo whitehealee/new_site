@@ -1,0 +1,242 @@
+{{ define "index" }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/reset.css">
+
+    <!-- Последняя компиляция и сжатый CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+<!--  TOP  -->
+<div class=header>
+    <div class="container">
+        <div class="header-top">
+            <div class="header-top-logo">
+                <img src="../png/veresotskyi.gif"  width="150" height="150" alt="veresotskyi.gif">
+            </div>
+            <div class="header-top-nav">
+                <div class="header-top-nav-top">
+                    <div class="header-top-nav-top-search">
+                        <input type="search" class="form-control search-text" placeholder="Що Ви шукаєте?">
+                        <button type="button" class="btn btn-success br0 search-button">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <div class="header-top-nav-top-stick">
+                        <img src="../png/stick.png"  width="3" height="80" alt="basket.gif">
+                    </div>
+                    <div class="header-top-nav-top-buy">
+                        <div class="header-top-nav-top-buy-button">
+                            <div class="basket-logo">
+                                <img src="../png/basket.gif"  width="50" height="80" alt="basket.gif">
+                            </div>
+                            <div class="basket-button">
+                                <button type="button" class="btn btn-success br0 basket">
+                                    <span class="basket-span">КОРЗИНА</span>
+                                </button><br>
+                                <span>Корзина порожня</span>
+                            </div>
+                        </div>
+                        <div class="header-top-nav-top-order">
+                            <button type="button" class="btn btn-success br0">
+                                <div class="header-top-nav-top-order-delivery">ДОСТАВКА</div>
+                            </button>
+                            <button type="button" class="btn btn-success br0 btn_header-top-nav-top-order-makeorder">
+                                <div class="header-top-nav-top-order-makeorder">ЗРОБИТИ<br>ЗАМОВЛЕННЯ</div>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <a href="#">test</a>
+                <div class="header-top-nav-menu-bot">
+                    <ul>
+                        <li class="header-top-nav-menu-bot-li"><button type="button" class="btn btn-default br1 header-top-nav-menu-bot-li-btn">Дізнайтесь більше про компанію</button></li>
+                        <li class="header-top-nav-menu-bot-li"><button type="button" class="btn btn-default br1 header-top-nav-menu-bot-li-btn">Поради краси</button></li>
+                        <li class="header-top-nav-menu-bot-li"><button type="button" class="btn btn-default br1 header-top-nav-menu-bot-li-btn">Моя сторінка</button></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <!--2 части шапки. это меню снизу-->
+        <div class="header-bot">
+            <div class="header-bot-line">
+            </div>
+            <div class="header-bot-line-menu-ul">
+                <a href="#"><div class="header-bot-line-menu-li">Для обличчя</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Аромати</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для тыла та засмаги</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для ванни та душу</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для чоловіків</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Здоров'я</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Для дому</div></a>
+                <a href="#"><div class="header-bot-line-menu-li">Новинки</div></a>
+            </div>
+
+        </div>
+        <!--конец нижнего меню-->
+    </div>
+</div>
+<!--  TOP  -->
+<!--#################################################################-->
+<!--body-->
+
+    <div class="body">
+        <div class="container">
+            <!--SKIDER #1-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="../png/baner.png"  alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../png/baner.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../png/baner.png" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+
+            <!--END SLIDER-->
+            <!--hot take-->
+            <div class="body-hot-take">
+                <div class="body-hot-take-text">
+                    ГАРЯЧІ ПРОПОЗИЦІЇ
+                </div>
+                <div class="body-hot-take-block-ul">
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/paprika.jpg" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/test_ware.png" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-hot-take-block-li">
+                        <img class="hot-order" src="../png/hot_order.png" alt="hot">
+                        <img src="../png/test_ware.png" alt="ware" class="hot-order-ware">
+                        <a href="#"><div class="body-hot-take-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--end hot take-->
+            <!--TOP-5-->
+            <div class="body-top">
+                <div class="body-top-text">
+                    ТОП-5 НАЙПОПУУЛЯРНІШИХ ТОВАРІВ ЦЬОГО ТИЖНЯ
+                </div>
+                <div class="body-top-block-ul">
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-top-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="top-ware">
+                        <a href="#"><div class="body-top-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <!--end hot take-->
+
+            <!--slider 2-->
+            <div id="carouselExampleSlidesOnly" class="carousel slide slider2" data-ride="carousel">
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <img class="d-block img-fluid" src="../png/baner.png" alt="First slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../png/baner.png" alt="Second slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block img-fluid" src="../png/baner.png" alt="Third slide">
+                    </div>
+                </div>
+            </div>
+            <!--END slider 2-->
+            <!--NEW-->
+            <div class="body-new">
+                <div class="body-new-text">
+                    НОВИНКИ
+                </div>
+                <div class="body-new-block-ul">
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                    <div class="body-new-block-li">
+                        <img src="../png/test_ware.png" alt="ware" class="new-ware">
+                        <a href="#"><div class="body-new-block-button">КУПИТИ</div></a>
+                    </div>
+                </div>
+            </div>
+            <!--END-NEW-->
+
+            <!--END BODY-->
+        </div>
+    </div>
+    <div class="futer">
+        <div class="container">
+            <div class="all_futer">
+                <div class="futer_menu_ul">
+                    <p class="futer_menu_ul_head">Про TM VERESOTSKYI</p>
+                    <div class="futer_menu_li">1</div>
+                    <div class="futer_menu_li">2</div>
+                    <div class="futer_menu_li">3</div>
+                    <div class="futer_menu_li">4</div>
+                    <div class="futer_menu_li">5</div>
+                </div>
+                <div class="futer_menu_ul">
+                    <p class="futer_menu_ul_head">Правила та умови</p>
+                    <div class="futer_menu_li">1</div>
+                    <div class="futer_menu_li">2</div>
+                    <div class="futer_menu_li">3</div>
+                    <div class="futer_menu_li">4</div>
+                    <div class="futer_menu_li">5</div>
+                </div>
+                <div class="futer_menu_ul">
+                    <p class="futer_menu_ul_head">Контакти</p>
+                    <div class="futer_menu_li">1</div>
+                    <div class="futer_menu_li">2</div>
+                    <div class="futer_menu_li">3</div>
+                    <div class="futer_menu_li">4</div>
+                    <div class="futer_menu_li">5</div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+{{end}}
